@@ -5,6 +5,7 @@ import {League} from "../models/league.interface";
 import {Team} from "../models/team.interface";
 import {NgOptimizedImage} from "@angular/common";
 import {RouterLink} from "@angular/router";
+import {MatButton} from "@angular/material/button";
 
 @Component({
   selector: 'app-search-page',
@@ -13,6 +14,7 @@ import {RouterLink} from "@angular/router";
     SearchbarComponent,
     NgOptimizedImage,
     RouterLink,
+    MatButton,
   ],
   templateUrl: './search-page.component.html',
   styleUrl: './search-page.component.css'

@@ -29,7 +29,7 @@ import {MatIconButton} from "@angular/material/button";
   styleUrl: './searchbar.component.css'
 })
 export class SearchbarComponent implements OnChanges, OnInit {
-  myControl = new FormControl('');
+  myControl = new FormControl('', );
   @Input() options: string[] = [];
   filteredOptions: Observable<string[]> | undefined;
   @Output() valueSelected = new EventEmitter<string>();

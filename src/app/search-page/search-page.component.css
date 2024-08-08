@@ -24,3 +24,10 @@
   margin-top: 10px;
   border-radius: 50%;
 }
+
+.action-container{
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: end; /* Centers vertically, if needed */
+  height: 80%;
+}

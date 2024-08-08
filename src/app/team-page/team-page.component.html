@@ -1,8 +1,11 @@
 <div class="team-container">
-  <h1 class="team-title">{{teamName}}</h1>
+  <h1 class="team-title">
+    <img [ngSrc]="team.thumbnail" height="40" width="40" alt="team-{{team.name}}-thumbnail">
+    {{team.name}}
+  </h1>
 
   <div class="player-list">
-    @for (player of players; track player._id){
+    @for (player of team.players; track player._id){
       <div class="team-item">
         <img [ngSrc]="player.thumbnail" alt="{{player.name}} thumbnail" class="team-thumbnail" height="100" width="100">
         <div class="team-info">
