@@ -1,0 +1,18 @@
+ /* Style for the parent container to center its content */
+.content {
+  display: flex; /* Enables flexbox for the container */
+  flex-direction: column; /* Aligns children vertically */
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Centers children vertically */
+  height: 100vh; /* Makes the container full height of the viewport */
+  text-align: center; /* Ensures text is centered */
+}
+
+/* Adds spacing between the elements */
+.content h1 {
+  margin-bottom: 20px; /* Adjust as necessary to control spacing */
+}
+
+.startBtn {
+  padding: 10px 20px; /* Optional: adjusts button padding for better appearance */
+}

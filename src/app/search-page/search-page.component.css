@@ -1,0 +1,26 @@
+.search-form{
+  margin-top: 20px ;
+  text-align: center;
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 5px;
+}
+
+.team-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.team-item img {
+  margin-top: 10px;
+  border-radius: 50%;
+}

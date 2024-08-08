@@ -1,0 +1,12 @@
+<div class="search-form">
+  <app-searchbar [options]="leagueNames" (valueSelected)="loadTeams($event)"></app-searchbar>
+</div>
+
+<div class="team-list">
+  @for (team of teams; track team._id){
+    <div class="team-item" [routerLink]="'/team/'+team._id">
+      {{team.name}}
+      <img [ngSrc]="team.thumbnail" alt="" width="100" height="100">
+  </div>
+  }
+</div>

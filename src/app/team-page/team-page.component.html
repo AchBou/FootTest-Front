@@ -1,0 +1,22 @@
+<div class="team-container">
+  <h1 class="team-title">{{teamName}}</h1>
+
+  <div class="player-list">
+    @for (player of players; track player._id){
+      <div class="team-item">
+        <img [ngSrc]="player.thumbnail" alt="{{player.name}} thumbnail" class="team-thumbnail" height="100" width="100">
+        <div class="team-info">
+          <h4>{{player.name}}</h4>
+          <p>{{player.position}}</p>
+          <p>{{player.signin.amount| currency:(player.signin.currency).toUpperCase()}}</p>
+          <p>{{player.born | date}}</p>
+        </div>
+      </div>
+    }
+  </div>
+</div>
+
+<div class="action-container">
+  <button mat-raised-button routerLink="/search" class="back">Go back</button>
+</div>
+
